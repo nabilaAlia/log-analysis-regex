@@ -1,0 +1,6 @@
+cat syslog.log
+
+Jan 31 00:21:30 ubuntu.local ticky: INFO Closed ticket [#01754] (nabila)
+Jan 31 00:22:10 ubuntu.local ticky: ERROR Permission denied while closing ticket (nabila)
+Jan 31 00:23:05 ubuntu.local ticky: INFO User logged out (alex)
+Jan 31 00:24:18 ubuntu.local ticky: ERROR Connection to database failed (alex)

@@ -11,3 +11,5 @@ This mini project parses a `syslog.log` file and generates two CSV reports:
 - Writing CSV output using Python’s `csv` module
 
 ## Input format (example)
+Jan 31 00:21:30 ubuntu.local ticky: INFO Closed ticket [#01754] (noel)
+Jan 31 00:21:30 ubuntu.local ticky: ERROR Connection to DB failed (noel)

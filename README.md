@@ -1,15 +1,39 @@
 # Log Analysis with Regular Expressions (Python)
 
-This mini project parses a `syslog.log` file and generates two CSV reports:
-- `error_message.csv` — most common ERROR messages (sorted by count, descending)
-- `user_statistics.csv` — per-user INFO/ERROR counts (sorted by username)
+This project demonstrates how to use Python and Regular Expressions to parse system logs, process the data into structured formats (CSV), and visualize the results as HTML reports.
 
-## What I practiced
-- Regular expressions (`re`) to match INFO/ERROR log formats
-- Dictionaries to count occurrences
-- Sorting results for reporting
-- Writing CSV output using Python’s `csv` module
+Project Structure
+lab_exercise_1.py: Basic regex extraction techniques.
 
-## Input format (example)
-Jan 31 00:21:30 ubuntu.local ticky: INFO Closed ticket [#01754] (noel)
-Jan 31 00:21:30 ubuntu.local ticky: ERROR Connection to DB failed (noel)
+lab_exercise_2.py: Practice with dictionary sorting and the operator module.
+
+ticky_check.py: The final automated script that generates error and user reports.
+
+csv_to_html.py: A utility script to convert CSV data into viewable HTML tables.
+
+## Exercise 2: Data Processing
+In this section, I practiced sorting dictionary data using the operator module to prepare it for reporting.
+
+Sorting by Key: Alphabetical ordering of data.
+
+Sorting by Value: Ordering by frequency of occurrence.
+
+Reversing: Using reverse=True to show the most frequent logs at the top.
+
+## Exercise 3: System Log Analysis (ticky_check.py)
+The main challenge was creating ticky_check.py, which performs the following:
+
+Parsing: Iterates through syslog.log using regex to find INFO and ERROR patterns.
+
+Counting: Tracks the number of specific error messages and per-user statistics.
+
+Reporting: Exports the sorted data into error_message.csv and user_statistics.csv.
+
+### Visualizations
+After converting the generated CSV files to HTML using csv_to_html.py, the reports look like this:
+
+### Error Message Ranking
+Displays all error messages from most common to least common.
+
+User Usage Statistics
+Displays a list of all users and their total INFO and ERROR log counts.
